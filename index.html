@@ -51,8 +51,13 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+
+                <!--- Assignment 2 - Task 3 - Adding a Block Button -->
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a href="#Jumptoreserve" class="btn btn-warning btn-small btn-block">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -74,14 +79,19 @@
             </div>
         </div>
 
-
+        <!--- Assignment 2 - Task 2 - Format section using Media Type -->
         <div class = "row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            <div class="col col-sm order-sm-last col-md">
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">                    
+                </div>
             </div>
         </div>
 
@@ -100,6 +110,70 @@
                 </div>
             </div>
         </div>
+
+        <!--- Assignment 2 - Task 1 - Adding a Reserve a Table Form -->
+        <a name="Jumptoreserve">
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-8 offset-sm-2">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <form>
+                        <div class="form-group row">    
+                            <label class="form-check-label col-sm-2">Number of Guests</label>
+
+                            <div class="form-check col-sm-6">                                                                
+
+                                <label class="radio-inline" for="inlineRadio1">
+                                <input class="radio-inline" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                 1 </label>
+                            
+                                <label class="radio-inline" for="inlineRadio2">
+                                <input class="radio-inline" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                 2 </label>
+                            
+
+                                <label class="radio-inline" for="inlineRadio3">
+                                <input class="radio-inline" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                 3 </label>
+                            
+                                <label class="radio-inline" for="inlineRadio4">
+                                <input class="radio-inline" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                                 4 </label>
+
+
+                            
+                                <label class="radio-inline" for="inlineRadio5">
+                                <input class="radio-inline" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                                 5 </label>
+                                
+                                <label class="radio-inline" for="inlineRadio6">
+                                <input class="radio-inline" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                                 6 </label>
+                            </div>                                
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Date and Time</label>                                    
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="datefield" name="datefield" placeholder="Date">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="timefield" name="timefield" placeholder="Time">
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <button type="button" class="btn btn-primary offset-sm-2">Reserve</button>
+                        </div>
+                    
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </a>
     </div>
 
     <footer class="footer">
